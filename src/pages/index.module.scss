@@ -3,9 +3,8 @@
 
 .container {
   height: 100%;
-}
 
-.title {
-  @include text-gradient(normal);
-  font-weight: 400;
+  main {
+    display: flex;
+  }
 }

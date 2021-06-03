@@ -1,0 +1,34 @@
+@import "../../styles/settings/all";
+@import "../../styles/tools/all";
+
+$border: 2px;
+
+.cta {
+  display: grid;
+  position: relative;
+  padding: 0.75rem;
+  color: $color-white;
+  background: $color-black;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 0.25rem;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background-image: $color-gradient;
+    background-size: 200% auto;
+    transition: 750ms;
+  }
+  &:hover {
+    &::before {
+      background-position: right center;
+    }
+  }
+}

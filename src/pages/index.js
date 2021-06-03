@@ -1,11 +1,18 @@
-import styles from "./Home.module.scss";
+import Cta from "../components/Cta";
+import Header from "../components/Header";
+
+import styles from "./index.module.scss";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <header>
-        <h1 className={styles.title}>Welcome to the Jungle</h1>
+        <Header>Welcome to the Jungle</Header>
       </header>
+      <main>
+        <Cta href="/css-snippets">CSS Snippets</Cta>
+        <Cta href="/react-snippets">React Snippets</Cta>
+      </main>
     </div>
   );
 }
