@@ -1,0 +1,15 @@
+@import "../../styles/settings/all.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - #{$global-footer-height});
+  margin-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.content {
+  flex: 1;
+}

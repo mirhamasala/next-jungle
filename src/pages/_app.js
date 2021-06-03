@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import AppLayout from "../components/AppLayout";
+
 import "../styles/globals.scss";
 
 function MyApp({Component, pageProps}) {
@@ -12,7 +14,9 @@ function MyApp({Component, pageProps}) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
     </>
   );
 }

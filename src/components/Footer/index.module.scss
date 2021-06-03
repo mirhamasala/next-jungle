@@ -1,0 +1,13 @@
+@import "../../styles/settings/all";
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $global-footer-height;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: $color-footer-text;
+  border-top: 1px solid $color-footer-border;
+}

@@ -22,9 +22,11 @@ $color-gradient: linear-gradient(
 $color-gradient-fallback: $color-yellow;
 
 // Reassign literal variables to meaningful ones.
+$color-app-text: $color-white;
 $color-app-background: $color-black;
 
-$color-home-title: $color-yellow;
+$color-footer-text: $color-white;
+$color-footer-border: $color-pink;
 
 $color-cta-text: $color-white;
 $color-cta-background: $color-black;
