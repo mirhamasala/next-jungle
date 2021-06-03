@@ -1,0 +1,11 @@
+@import "../styles/settings/all";
+@import "../styles/tools/all";
+
+.container {
+  height: 100%;
+}
+
+.title {
+  @include text-gradient(normal);
+  font-weight: 400;
+}
