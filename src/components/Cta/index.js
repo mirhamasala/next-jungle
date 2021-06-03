@@ -7,13 +7,13 @@ const Button = ({href, children}) => {
   if (href) {
     return (
       <NextLink href={href}>
-        <a className={styles.cta}>{children}</a>
+        <a className={styles.link}>{children}</a>
       </NextLink>
     );
   }
 
   return (
-    <button type="button" className={styles.cta}>
+    <button type="button" className={styles.button}>
       {children}
     </button>
   );

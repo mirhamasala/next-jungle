@@ -1,9 +1,7 @@
-import Header from "../../components/Header";
+import Layout from "../../components/Layout";
 
 export default function CssSnippets() {
   return (
-    <>
-      <Header>CSS Snippets</Header>
-    </>
+    <Layout header={"CSS Snippets"} main={<div>Hello CSS Snippets</div>} />
   );
 }

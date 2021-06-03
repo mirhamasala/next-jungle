@@ -1,9 +1,7 @@
-import Header from "../../components/Header";
+import Layout from "../../components/Layout";
 
 export default function ReactSnippets() {
   return (
-    <>
-      <Header>React Snippets</Header>
-    </>
+    <Layout header={"React Snippets"} main={<div>Hello React Snippets</div>} />
   );
 }

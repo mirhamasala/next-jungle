@@ -1,18 +1,18 @@
 import Cta from "../components/Cta";
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 
 import styles from "./index.module.scss";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <header>
-        <Header>Welcome to the Jungle</Header>
-      </header>
-      <main>
-        <Cta href="/css-snippets">CSS Snippets</Cta>
-        <Cta href="/react-snippets">React Snippets</Cta>
-      </main>
-    </div>
+    <Layout
+      header={"Welcome to the Jungle"}
+      main={
+        <div className={styles.cta}>
+          <Cta href="/css-snippets">CSS Snippets</Cta>
+          <Cta href="/react-snippets">React Snippets</Cta>
+        </div>
+      }
+    />
   );
 }
