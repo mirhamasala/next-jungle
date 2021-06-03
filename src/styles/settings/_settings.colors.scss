@@ -1,0 +1,26 @@
+/*----------------------------------*\
+  #COLORS
+\*----------------------------------*/
+
+// Colour palette.
+$color-black: #1a1a1a;
+$color-blue: #5cc9f5;
+$color-gray: #242424;
+$color-green: #4af2a1;
+$color-pink: #f78ae0;
+$color-purple: #6638f0;
+$color-yellow: #f4bd00;
+$color-white: #fffafa;
+
+$color-gradient: linear-gradient(
+  45deg,
+  $color-yellow,
+  $color-purple,
+  $color-blue,
+  $color-purple
+);
+$color-gradient-fallback: $color-yellow;
+
+// Reassign literal variables to meaningful ones.
+$color-app-background: $color-black;
+$color-home-title: $color-yellow;

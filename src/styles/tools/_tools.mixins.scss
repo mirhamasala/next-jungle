@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #MIXINS
+\*------------------------------------*/
+
+@mixin text-gradient($line-height) {
+  display: inline-block;
+  color: $color-gradient-fallback;
+  background-image: $color-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: $line-height;
+}
