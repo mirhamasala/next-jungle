@@ -12,6 +12,7 @@ $border: 2px;
   background-clip: padding-box;
   border: solid $border transparent;
   border-radius: 0.25rem;
+
   &:before {
     content: "";
     position: absolute;
@@ -26,6 +27,7 @@ $border: 2px;
     background-size: 200% auto;
     transition: 750ms;
   }
+
   &:hover {
     &::before {
       background-position: right center;
