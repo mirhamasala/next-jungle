@@ -3,7 +3,6 @@
 \*------------------------------------*/
 
 @import "../../../styles/settings/all";
-@import "../../../styles/tools/all";
 
 .root {
   display: grid;
@@ -17,10 +16,14 @@
   h3,
   p {
     flex: 1;
+    line-height: 1.75rem;
   }
 
   h3 {
     position: sticky;
     top: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $color-green;
   }
 }

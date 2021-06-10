@@ -9,9 +9,9 @@ const StickySections = () => {
     <div className={styles.root}>
       {DEFAULT_SECTIONS.map((section, index) => (
         <section key={index} className={styles.section}>
-          <Title variant="h3" color="green">
+          <h3>
             {section.title}
-          </Title>
+          </h3>
           <p>{section.text}</p>
         </section>
       ))}
