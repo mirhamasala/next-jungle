@@ -11,7 +11,7 @@ $border: 2px;
   color: $color-cta-text;
   background: $color-cta-background;
   background-clip: padding-box;
-  border: solid $border transparent;
+  border: $border solid transparent;
   border-radius: 0.25rem;
 
   &:before {
