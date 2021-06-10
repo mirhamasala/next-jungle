@@ -8,9 +8,6 @@
 .root {
   display: grid;
   grid-row-gap: 2rem;
-
-  @media (min-width: $sm) {
-  }
 }
 
 .section {
