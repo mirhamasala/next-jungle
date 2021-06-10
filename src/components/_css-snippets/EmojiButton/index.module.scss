@@ -1,0 +1,51 @@
+/*------------------------------------*\
+  #EMOJI-BUTTON
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+
+$button-height: 3.5rem;
+
+.button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $button-height;
+  padding: 1rem;
+  color: $color-white;
+  background-color: $color-gray;
+  border: none;
+  border-radius: 0.25rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $color-blue;
+    outline: none;
+  }
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  width: $button-height;
+  height: $button-height;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.separator {
+  width: 1px;
+  height: 100%;
+  background-color: $color-green;
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
