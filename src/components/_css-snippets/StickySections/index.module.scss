@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  line-height: 1.75rem;
 
   h3 {
     position: sticky;
@@ -25,6 +24,11 @@
     font-weight: 400;
     color: $color-green;
     background-color: $color-gray;
+  }
+
+  h3,
+  p {
+    line-height: 1.75rem;
   }
 
   @media (min-width: $sm) {
