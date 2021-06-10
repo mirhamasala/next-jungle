@@ -17,3 +17,29 @@
 .main {
   grid-area: main;
 }
+
+.section {
+  display: grid;
+  grid-row-gap: 1.5rem;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-radius: 0.25rem;
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  &:nth-child(even) {
+    border: 1px solid $color-gray;
+  }
+  &:nth-child(odd) {
+    background-color: $color-gray;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: $color-pink;
+  }
+}
