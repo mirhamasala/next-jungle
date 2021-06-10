@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #CSS-SNIPPETS
+\*------------------------------------*/
+
+@import "../../styles/settings/all";
+@import "../../styles/tools/all";
+
+.buttons {
+  display: grid;
+  row-gap: 1rem;
+  width: 16rem;
+}

@@ -1,8 +1,25 @@
+import EmojiButton from "../../components/_css-snippets/EmojiButton";
 import HorizontalOverflow from "../../components/_css-snippets/HorizontalOverflow";
 import StickyHeader from "../../components/_css-snippets/StickyHeader";
 import StickySections from "../../components/_css-snippets/StickySections";
 
 import Layout from "../../components/Layout";
+
+import styles from "./index.module.scss";
+
+const emojiButton = (
+  <>
+    <h2>Emoji Button</h2>
+    <div className={styles.buttons}>
+      <EmojiButton icon={"🍌"} label={"Banana emoji"}>
+        Go bananas
+      </EmojiButton>
+      <EmojiButton icon={"🌴"} label={"Palm tree emoji"}>
+        Or go home
+      </EmojiButton>
+    </div>
+  </>
+);
 
 const horizontalOverflow = (
   <>
@@ -26,7 +43,12 @@ const stickySections = (
 );
 
 /* Order matters */
-const sections = [stickySections, horizontalOverflow, stickyHeader];
+const sections = [
+  stickySections,
+  horizontalOverflow,
+  stickyHeader,
+  emojiButton,
+];
 
 export default function CssSnippets() {
   return <Layout header={"CSS Snippets"} sections={sections} />;
