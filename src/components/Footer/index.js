@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p>
-        Jungle by{" "}
+        <span>Jungle</span> by{" "}
         <Link href="https://www.mirhamasala.com/about" external={true}>
           Mirha Masala
         </Link>

@@ -6,14 +6,26 @@
 @import "../../styles/tools/all";
 
 .footer {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: $global-footer-height;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  height: 3rem;
   margin-top: 4rem;
   color: $color-footer-text;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
   border-top: 1px solid $color-footer-border;
+
+  span {
+    color: $color-footer-highlight;
+  }
+
+  a {
+    text-transform: inherit;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 1rem;
+  }
 }
