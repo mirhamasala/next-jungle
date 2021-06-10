@@ -1,0 +1,14 @@
+@import "../../styles/settings/all";
+@import "../../styles/tools/all";
+
+.header {
+  font-size: 1.25rem;
+
+  @media (min-width: $sm) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: $md) {
+    font-size: 2rem;
+  }
+}
