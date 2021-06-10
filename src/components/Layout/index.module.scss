@@ -1,9 +1,23 @@
 @import "../../styles/settings/all";
 
+.nav {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.25rem;
+  border-bottom: 1px solid $color-blue;
+
+  a {
+    color: $color-pink;
+    letter-spacing: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
 .grid {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
     "header"
     "main";
