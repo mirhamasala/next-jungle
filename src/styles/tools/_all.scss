@@ -5,7 +5,9 @@
 /**
  * CONTENTS
  *
+ * Breakpoints...............Globally available breakpoints.
  * Mixins...............Globally available mixins.
 */
 
+@import "tools.breakpoints";
 @import "tools.mixins";
