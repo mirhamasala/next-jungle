@@ -1,4 +1,9 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
 @import "../../styles/settings/all";
+@import "../../styles/tools/all";
 
 .footer {
   box-sizing: border-box;
@@ -8,6 +13,7 @@
   height: $global-footer-height;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-top: 4rem;
   color: $color-footer-text;
   border-top: 1px solid $color-footer-border;
 }
