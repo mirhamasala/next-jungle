@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #HORIZONTAL-OVERFLOW
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+
+.root {
+  overflow-x: scroll;
+  padding: 0.75rem;
+  border: 1px solid $color-blue;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+
+  &__item {
+    display: inline;
+    padding: 0.375rem;
+    border-radius: inherit;
+  }
+}
