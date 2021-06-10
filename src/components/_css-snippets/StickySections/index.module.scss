@@ -1,10 +1,13 @@
+/*------------------------------------*\
+  #STICKY-SECTIONS
+\*------------------------------------*/
+
 @import "../../../styles/settings/all";
 @import "../../../styles/tools/all";
 
 .root {
   display: grid;
   grid-row-gap: 2rem;
-  margin-bottom: 100vh; /* Add enough space to activate sticky elements */
 }
 
 .section {
