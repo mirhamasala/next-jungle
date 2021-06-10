@@ -3,27 +3,47 @@
 \*------------------------------------*/
 
 @import "../../../styles/settings/all";
+@import "../../../styles/tools/all";
 
 .root {
   display: grid;
   grid-row-gap: 2rem;
+
+  @media (min-width: $sm) {
+  }
 }
 
 .section {
   display: flex;
-  align-items: flex-start;
-
-  h3,
-  p {
-    flex: 1;
-    line-height: 1.75rem;
-  }
+  flex-direction: column;
+  row-gap: 1rem;
+  line-height: 1.75rem;
 
   h3 {
     position: sticky;
     top: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     font-size: 1.125rem;
     font-weight: 400;
     color: $color-green;
+    background-color: $color-black;
+  }
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+    align-items: flex-start;
+
+    h3,
+    p {
+      flex: 1;
+    }
+
+    h3 {
+      position: sticky;
+      top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
