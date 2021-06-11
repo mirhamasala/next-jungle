@@ -1,8 +1,8 @@
-# Jungle
+# 🐒 Jungle
 
-🐒 A playground for practicing CSS and React
+A playground for practicing CSS and React
 
-- Live at [next-jungle.vercel.app](https://next-jungle.vercel.app/)
+Live at [next-jungle.vercel.app](https://next-jungle.vercel.app/)
 
 ## Resources
 
