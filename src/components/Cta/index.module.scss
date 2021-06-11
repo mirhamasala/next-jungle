@@ -1,7 +1,7 @@
 @import "../../styles/settings/all";
 @import "../../styles/tools/all";
 
-$border: 2px;
+$border: 1px;
 
 .button {
   display: grid;
@@ -11,7 +11,7 @@ $border: 2px;
   color: $color-cta-text;
   background: $color-cta-background;
   background-clip: padding-box;
-  border: $border solid transparent;
+  border: $border solid $border transparent;
   border-radius: 0.25rem;
 
   &:before {
