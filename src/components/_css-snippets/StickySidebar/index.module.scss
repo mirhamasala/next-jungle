@@ -1,0 +1,81 @@
+/*------------------------------------*\
+  #STICKY-SIDEBAR
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+@import "../../../styles/tools/all";
+
+.root {
+  display: flex;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  padding: 1.25rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: $color-black;
+}
+
+.inner {
+  position: sticky;
+  top: 0;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-green;
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.button {
+  padding: 0.25rem;
+  font-weight: 400;
+  color: $color-white;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.25rem;
+
+  &:focus,
+  &:active,
+  .selected {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 1px $color-yellow;
+    outline: none;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  border: 1.25rem solid $color-black;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: $color-gray;
+}
+
+.content {
+  height: 16rem;
+  overflow-y: scroll;
+  padding: 1.75rem;
+
+  h3,
+  p {
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    color: $color-yellow;
+  }
+}
