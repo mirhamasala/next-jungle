@@ -1,6 +1,6 @@
-# Next Jungle Gym
+# Jungle
 
-🐒 CSS and React snippets
+🐒 A playground for practicing CSS and React
 
 - Live at [next-jungle.vercel.app](https://next-jungle.vercel.app/)
 
