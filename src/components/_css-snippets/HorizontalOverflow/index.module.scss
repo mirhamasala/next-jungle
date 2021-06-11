@@ -5,15 +5,9 @@
 @import "../../../styles/settings/all";
 
 .root {
-  overflow-x: scroll;
+  display: flex;
   padding: 0.75rem;
   border: 1px solid $color-blue;
   border-radius: 0.5rem;
-  white-space: nowrap;
-
-  &__item {
-    display: inline;
-    padding: 0.375rem;
-    border-radius: inherit;
-  }
+  overflow-x: scroll;
 }
