@@ -2,6 +2,7 @@ import EmojiButton from "../../components/_css-snippets/EmojiButton";
 import HorizontalOverflow from "../../components/_css-snippets/HorizontalOverflow";
 import StickyHeader from "../../components/_css-snippets/StickyHeader";
 import StickySections from "../../components/_css-snippets/StickySections";
+import StickySidebar from "../../components/_css-snippets/StickySidebar";
 
 import Layout from "../../components/Layout";
 
@@ -42,12 +43,20 @@ const stickySections = (
   </>
 );
 
+const stickySidebar = (
+  <>
+    <h2>Sticky Sidebar</h2>
+    <StickySidebar />
+  </>
+);
+
 /* Order matters */
 const sections = [
   stickySections,
   horizontalOverflow,
   stickyHeader,
   emojiButton,
+  stickySidebar,
 ];
 
 export default function CssSnippets() {
