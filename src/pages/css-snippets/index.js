@@ -1,3 +1,4 @@
+import Card from "../../components/_css-snippets/Card";
 import EmojiButton from "../../components/_css-snippets/EmojiButton";
 import HorizontalOverflow from "../../components/_css-snippets/HorizontalOverflow";
 import StickyHeader from "../../components/_css-snippets/StickyHeader";
@@ -7,6 +8,13 @@ import StickySidebar from "../../components/_css-snippets/StickySidebar";
 import Layout from "../../components/Layout";
 
 import styles from "./index.module.scss";
+
+const card = (
+  <>
+    <h2>Card</h2>
+    <Card />
+  </>
+);
 
 const emojiButton = (
   <>
@@ -52,6 +60,7 @@ const stickySidebar = (
 
 /* Order matters */
 const sections = [
+  card,
   stickySections,
   horizontalOverflow,
   stickyHeader,

@@ -1,0 +1,43 @@
+@import "../../../styles/settings/all";
+@import "../../../styles/tools/all";
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  margin-top: 1rem;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  backface-visibility: hidden;
+  color: $color-white;
+  border: 1px solid $color-green;
+  border-radius: 0.25rem;
+  background-color: $color-black;
+  transition: transform 0.5s ease;
+}
+
+.back {
+  border: 1px solid $color-green;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+// Show the card
+.back.flipped {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front {
+  border: 1px solid $color-blue;
+  transform: perspective(600px) rotateY(0deg);
+}
+
+// Hide the card
+.front.flipped {
+  transform: perspective(600px) rotateY(-180deg);
+}
