@@ -1,0 +1,51 @@
+/*------------------------------------*\
+  #STICKY-SIDEBAR
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+@import "../../../styles/tools/all";
+
+.container {
+  position: relative;
+  height: 200vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  height: 3.5rem;
+  background-color: $color-black;
+
+  &.purple {
+    background-color: $color-purple;
+  }
+
+  &.pink {
+    background-color: $color-pink;
+  }
+
+  &.blue {
+    background-color: $color-blue;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  height: 12rem;
+
+  &:first-child {
+    background-color: $color-purple;
+  }
+
+  &:nth-child(2) {
+    background-color: $color-pink;
+  }
+
+  &:last-child {
+    background-color: $color-blue;
+  }
+}
