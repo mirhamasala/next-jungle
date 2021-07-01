@@ -2,9 +2,9 @@ import { mixColor } from "@popmotion/popcorn";
 
 import styles from "./index.module.scss";
 
-const PRIMARY = "#2DEDE0";
-const SECONDARY = "#7F29E8";
-const TERTIARY = "#F7E374";
+const PRIMARY = "#5cc9f5";
+const SECONDARY = "#6638f0";
+const TERTIARY = "#f4bd00";
 const TRANSPARENT = "rgba(0,0,0,0)";
 
 const mixerOne = mixColor(PRIMARY, TRANSPARENT);
