@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  #GRADIENT-STEPPER
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+@import "../../../styles/tools/all";
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: $color-white;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+
+  span {
+    color: $color-white;
+  }
+
+  ul {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 5rem;
+    height: 0.25rem;
+    list-style: none;
+    border-radius: 0.25rem;
+
+    li {
+      flex-grow: 1;
+      background-color: $color-black;
+      border-radius: 0.25rem;
+
+      &:not(:last-child) {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
