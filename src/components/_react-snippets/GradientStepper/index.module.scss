@@ -6,25 +6,24 @@
 @import "../../../styles/tools/all";
 
 .stepper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  display: grid;
+  grid-row-gap: 1.5rem;
   color: $color-white;
-  font-size: 0.625rem;
+  font-size: 1rem;
   line-height: 0.75rem;
 
-  span {
-    color: $color-white;
+  div {
+    display: inline-grid;
+    grid-template-columns: max-content minmax(0, 10rem);
+    grid-column-gap: 1.25rem;
+    align-items: baseline;
   }
 
   ul {
     display: inline-flex;
     justify-content: space-between;
-    width: 5rem;
-    height: 0.25rem;
+    height: 0.375rem;
     list-style: none;
-    border-radius: 0.25rem;
 
     li {
       flex-grow: 1;
@@ -32,7 +31,7 @@
       border-radius: 0.25rem;
 
       &:not(:last-child) {
-        margin-right: 0.25rem;
+        margin-right: 0.375rem;
       }
     }
   }
