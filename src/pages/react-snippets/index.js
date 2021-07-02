@@ -7,7 +7,7 @@ import Layout from "../../components/Layout";
 const gradientStepper = (
   <>
     <h2>Gradient Stepper</h2>
-    <GradientStepper totalSteps={4} />
+    <GradientStepper totalSteps={6} />
   </>
 );
 
