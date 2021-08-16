@@ -1,4 +1,5 @@
 import EmojiButton from "../../components/_css-snippets/EmojiButton";
+import FloatingLabel from "../../components/_css-snippets/FloatingLabel";
 import HorizontalOverflow from "../../components/_css-snippets/HorizontalOverflow";
 import StickyHeader from "../../components/_css-snippets/StickyHeader";
 import StickySections from "../../components/_css-snippets/StickySections";
@@ -19,6 +20,13 @@ const emojiButton = (
         Or go home
       </EmojiButton>
     </div>
+  </>
+);
+
+const floatingLabel = (
+  <>
+    <h2>Floating Label</h2>
+    <FloatingLabel />
   </>
 );
 
@@ -57,6 +65,7 @@ const sections = [
   stickyHeader,
   emojiButton,
   stickySidebar,
+  floatingLabel,
 ];
 
 export default function CssSnippets() {
