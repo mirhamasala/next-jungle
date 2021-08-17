@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  #FLOATING-LABEL
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+
+$spacing-x: 1rem;
+
+.field {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-flow: column-reverse;
+  height: 3.75rem;
+}
+
+.input,
+.label {
+  transition: all 200ms;
+}
+
+.input {
+  height: 100%;
+  padding-top: 1.375rem;
+  padding-right: $spacing-x;
+  padding-bottom: 0.5rem;
+  padding-left: $spacing-x;
+  font-size: 1rem;
+  color: $color-input-text;
+  background-color: $color-input-background;
+  border: 1px solid $color-input-border;
+  border-radius: 0.25rem;
+  caret-color: $color-input-caret;
+
+  &:hover {
+    border-color: $color-input-border-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $color-input-border-focused;
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  &::placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+
+  &:not(:placeholder-shown) + .label,
+  &:focus + .label {
+    top: 0;
+    font-size: 0.75rem;
+    color: $color-input-label-focused;
+    transform: translateY(0.5rem);
+  }
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: $spacing-x;
+  max-width: 75%;
+  color: $color-input-label;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateY(-50%);
+}
