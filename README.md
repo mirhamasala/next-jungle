@@ -16,3 +16,10 @@ Live at [next-jungle.vercel.app](https://next-jungle.vercel.app/)
 
 - [BEM with SASS and :hover](https://stackoverflow.com/questions/34021910/bem-with-sass-and-hover)
 - [CSS4 Variables and Sass](https://codepen.io/jakealbaugh/post/css4-variables-and-sass)
+
+### SOLUTIONS
+
+#### FLOATING LABEL
+
+- [Revisiting the Float Label pattern with CSS](https://thatemil.com/blog/2016/01/23/floating-label-no-js-pure-css/)
+- [CodePen Collection Float Labels](https://codepen.io/collection/IjFib/)
