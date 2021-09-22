@@ -16,11 +16,3 @@ body {
   background-color: $color-app-background;
   color: $color-app-text;
 }
-
-a {
-  &:focus {
-    border-radius: 0.25rem;
-    box-shadow: 0 0 0 1px $color-yellow;
-    outline: none;
-  }
-}

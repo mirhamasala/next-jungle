@@ -2,12 +2,13 @@
 @import "../styles/tools/all";
 
 .cta {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
   row-gap: 1rem;
 
   @media (min-width: $sm) {
-    flex-direction: row;
+    grid-template-rows: none;
+    grid-template-columns: repeat(2, max-content);
     column-gap: 1rem;
   }
 }
