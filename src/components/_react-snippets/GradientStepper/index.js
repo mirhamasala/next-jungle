@@ -45,7 +45,7 @@ const GradientStepper = ({ totalSteps }) => {
   return (
     <div className={styles.stepper}>
       {[...Array(totalSteps)].map((_num, index) => (
-        <div>
+        <div key={index}>
           Step {index + 1} of {totalSteps}
           <ul>{renderSteps(index + 1, totalSteps)}</ul>
         </div>
