@@ -1,0 +1,76 @@
+/*------------------------------------*\
+  #PAGINATION-NUMBERS
+\*------------------------------------*/
+
+@import "../../../styles/settings/all";
+
+$total-steps: 5;
+
+.root {
+  display: flex;
+  height: 240px;
+}
+
+.sidebar {
+  flex: 40% 1 0;
+  display: flex;
+  height: 100%;
+  padding: 0.5rem;
+  border: 2px solid $color-yellow;
+}
+
+.main {
+  flex: 60% 1 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  border: 2px solid $color-purple;
+}
+
+.nav {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid $color-blue;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  color: $color-white;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  &:first-child {
+    z-index: $total-steps;
+  }
+
+  @for $i from 1 through ($total-steps - 1) {
+    &:nth-child(#{$i + 1}) {
+      z-index: $total-steps - $i;
+      margin-left: -20px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-gray;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-yellow;
+  }
+
+  &.active {
+    z-index: $total-steps;
+    background-color: $color-white;
+    color: $color-black;
+  }
+}

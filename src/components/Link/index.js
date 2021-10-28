@@ -11,7 +11,7 @@ const renderInnerAnchor = (href, children) => {
   );
 };
 
-const Link = ({href, external, children}) => {
+const Link = ({ href, external, children }) => {
   if (!external) {
     return <NextLink href={href}>{renderInnerAnchor(href, children)}</NextLink>;
   }
@@ -19,13 +19,13 @@ const Link = ({href, external, children}) => {
 };
 
 Link.defaultProps = {
-  external: false
+  external: false,
 };
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   external: PropTypes.bool,
-  href: PropTypes.string.isRequired
+  href: PropTypes.string.isRequired,
 };
 
 export default Link;
