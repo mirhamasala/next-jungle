@@ -1,6 +1,7 @@
 import EmojiButton from "../../components/_css-snippets/EmojiButton";
 import FloatingLabel from "../../components/_css-snippets/FloatingLabel";
 import HorizontalOverflow from "../../components/_css-snippets/HorizontalOverflow";
+import PaginationNumbers from "../../components/_css-snippets/PaginationNumbers";
 import StickyHeader from "../../components/_css-snippets/StickyHeader";
 import StickySections from "../../components/_css-snippets/StickySections";
 import StickySidebar from "../../components/_css-snippets/StickySidebar";
@@ -37,6 +38,13 @@ const horizontalOverflow = (
   </>
 );
 
+const paginationNumbers = (
+  <>
+    <h2>Pagination Numbers</h2>
+    <PaginationNumbers />
+  </>
+);
+
 const stickyHeader = (
   <>
     <h2>Sticky Header</h2>
@@ -60,6 +68,7 @@ const stickySidebar = (
 
 /* Order matters */
 const sections = [
+  paginationNumbers,
   stickySections,
   horizontalOverflow,
   stickyHeader,
